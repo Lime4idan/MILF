@@ -54,7 +54,7 @@ body {
   width: 200px;
 }
 
-/* BotÃ£o hambÃºrguer */
+/* Botao hamburguer */
 .hamburger {
   position: absolute;
   top: 20px;
@@ -94,7 +94,6 @@ body {
   text-align: center;
 }
 
-/* CONTEÃšDO */
 .content {
   margin-left: 60px;
   transition: margin-left 0.3s ease;
@@ -538,7 +537,7 @@ body {
 }
 
 /* RESPONSIVIDADE */
-/* Telas mÃ©dias (atÃ© 1024px) */
+/* (tela 1024px) */
 @media (max-width: 1024px) {
   .products {
     grid-template-columns: repeat(3, 1fr);
@@ -549,7 +548,7 @@ body {
   }
 }
 
-/* Telas pequenas (atÃ© 768px) */
+/* (tela 768px) */
 @media (max-width: 768px) {
   .products {
     grid-template-columns: repeat(2, 1fr);
@@ -587,7 +586,7 @@ body {
   }
 }
 
-/* Telas muito pequenas (atÃ© 480px) */
+/* (tela 480px) */
 @media (max-width: 480px) {
   .products {
     grid-template-columns: 1fr;
@@ -873,7 +872,7 @@ body {
 .buy-btn:hover {
   transform: translateY(-2px);
 }
-/* ====== LOGIN â€“ LAYOUT ====== */
+/* ====== LOGIN  ====== */
 .content.login-screen {
   display: flex;
   flex-direction: column;
@@ -891,21 +890,21 @@ body {
   position: relative;
 }
 
-/* pilha: aba clara atrÃ¡s + card */
+
 .login-stack {
   position: relative;
-  width: 520px;               /* largura do mock */
+  width: 520px;               
 }
 
-/* ABA CLARA DE FUNDO (por trÃ¡s do card) */
+/* ABA CLARA DE FUNDO (por tras do card) */
 .login-tab {
   position: absolute;
-  top: -105px;                /* faz a aba â€œsubirâ€ por trÃ¡s do card */
+  top: -105px;              
   left: 50%;
   transform: translateX(-50%);
   width: 520px;
   height: 150px;
-  background: var(--c-bg-lighter);        /* azul claro do mock */
+  background: var(--c-bg-lighter);       
   border-radius: 28px;
   box-shadow: 0 14px 22px rgba(0,0,0,.25) inset, 0 18px 30px rgba(0,0,0,.20);
   display: flex;
@@ -922,7 +921,7 @@ body {
 
 /* CARD ESCURO */
 .login-card {
-  background: var(--c-bg-dark);       /* azul bem escuro */
+  background: var(--c-bg-dark);       
   color: #EAF7FF;
   padding: 28px 32px 34px;
   border-radius: 16px;
@@ -938,13 +937,13 @@ body {
   margin: 6px 0 10px;
 }
 
-/* tÃ­tulo */
+/* ti­tulo */
 .login-card h2{
   font-size: 18px;
   margin-bottom: 14px;
 }
 
-/* ====== BOTÃ•ES SOCIAIS ====== */
+/* ====== B SOCIAIS ====== */
 .social-login{
   display: flex;
   justify-content: center;
@@ -986,7 +985,7 @@ body {
   height: 42px;
   border: none;
   border-radius: 8px;
-  background: var(--c-bg-lighter);       /* campos clarinhos como no mock */
+  background: var(--c-bg-lighter);       
   padding: 10px 14px;
   color: var(--c-bg-dark);
   font-size: 14px;
@@ -1000,7 +999,7 @@ body {
   outline: 2px solid #1FA2FF;
 }
 
-/* botÃ£o CONTINUAR em pill com gradiente */
+/* b CONTINUAR  */
 .login-form button{
   width: 70%;
   margin: 8px auto 0;
@@ -1038,7 +1037,7 @@ body {
 
   .login-tab{ height: 130px; top: -95px; }
 }
-/* Container principal da seÃ§Ã£o favoritos */
+/* Container principal da s favoritos */
 .favoritos-section {
   background: linear-gradient(180deg, var(--c-bg-dark), #021E47);
   border-radius: 25px;
@@ -1048,7 +1047,7 @@ body {
   box-shadow: 0 0 30px rgba(0,0,0,0.3);
 }
 
-/* TÃ­tulo com Ã­cone */
+/* Ti­tulo com i­cone */
 .favoritos-header {
   display: flex;
   align-items: center;
@@ -1103,7 +1102,7 @@ body {
   font-size: 12px;
 }
 
-/* RodapÃ© do card */
+/* Rodape do card */
 .produto-footer {
   margin-top: 8px;
   display: flex;
@@ -1124,3 +1123,38 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+/* ====== GALERIA ====== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin: 20px 0 40px;
+  }
+  
+  .gallery-card {
+    background: var(--c-bg-light);
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .gallery-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .gallery-card p {
+    margin: 12px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--c-cyan);
+  }
+  
