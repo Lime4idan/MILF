@@ -727,12 +727,6 @@ body {
   }
 }
 
-/* AnimaÃ§Ãµes */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 .overlay {
   display: none;
   position: fixed;
