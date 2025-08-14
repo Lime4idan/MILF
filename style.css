@@ -1020,15 +1020,6 @@ body {
   opacity: .95;
 }
 
-
-/* ====== RESPONSIVO ====== */
-@media (max-width: 560px){
-  .login-stack,
-  .login-tab,
-  .login-card{ width: 92vw; }
-
-  .login-tab{ height: 130px; top: -95px; }
-}
 /* Container principal da s favoritos */
 .favoritos-section {
   background: linear-gradient(180deg, var(--c-bg-dark), #021E47);
